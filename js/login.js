@@ -8,9 +8,9 @@ document.getElementById('btn-submit').addEventListener('click',function(event){
         emailField.value='';
         passwordlField.value='';
         if(emailValue=='arifice13@gmail.com' && passwordValue==='password'){
-            console.log('valid user');
+            window.location.href='bank.html';
         }
         else{
-            console.log('invalid user');
+            alert('Invalid User');
         }
     });
