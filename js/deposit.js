@@ -10,7 +10,7 @@ document.getElementById('btn-deposit').addEventListener('click',function(event){
 
     const balanceElement=document.getElementById('balance-total');
     const priviousBalance=balanceElement.innerText;
-    const currentBalance=parseFloat(priviousBalance)+currentDeposit;
+    const currentBalance=parseFloat(priviousBalance)+parseFloat(newDepositAmount);
     balanceElement.innerText=currentBalance;
 
 });
@@ -29,7 +29,7 @@ document.getElementById('btn-withdraw').addEventListener('click',function(event)
 
     const balanceElement=document.getElementById('balance-total');
     const priviousBalance=balanceElement.innerText;
-    const currentBalance=parseFloat(priviousBalance)-currentWithDraw;
+    const currentBalance=parseFloat(priviousBalance) - parseFloat(newWithDrawAmount);
     balanceElement.innerText=currentBalance;
 
     
