@@ -29,38 +29,38 @@
 </head>
 <body class="bg-white container  mx-auto text-black font-font-roboto">
     <header>
-        <h1 class="font-black text-center shadow-2xl py-8 bg-amber-200 text-6xl"> <span class="text-red-600 text-8xl">L</span>et's <span class="text-8xl text-green-600">G</span>et  Some <span class="text-8xl text-purple-700">Money  !!!!</span> </h1>
+        <h1 class="font-black text-center shadow-2xl py-8 bg-amber-200 lg:text-6xl"> <span class="text-red-600 lg:text-8xl">L</span>et's <span class="lg:text-8xl text-green-600">G</span>et  Some <span class="lg:text-8xl text-purple-700">Money  !!!!</span> </h1>
     </header>
     <main>
         <section class="w-11/12 mx-auto my-24">
-            <div class="grid grid-cols-3 gap-8">
-                <div class="bg-green-500 shadow-2xl rounded-lg py-8 text-center space-y-4 font-semibold  text-white">
-                    <h1 class="text-5xl">Deposit</h1>
-                    <h3 class="text-8xl">$<span id="deposit-total">00</span></h3>
+            <div class="grid grid-cols-3 gap-2 lg:gap-8">
+                <div class="bg-green-500 shadow-2xl rounded-lg py-2 lg:py-8 text-center space-y-1 lg:space-y-4 font-semibold  text-white">
+                    <h1 class="lg:text-5xl">Deposit</h1>
+                    <h3 class="lg:text-8xl">$<span id="deposit-total">00</span></h3>
                 </div >
-                <div class="bg-pink-500 shadow-2xl rounded-lg py-8 text-center space-y-4 font-semibold  text-white">
-                    <h1 class="text-5xl">Withdraw</h1>
-                    <h3 class="text-8xl">$<span id="withdraw-total">00</span></h3>
+                <div class="bg-pink-500 shadow-2xl rounded-lg py-2 lg:py-8 text-center space-y-1 lg:space-y-4 font-semibold  text-white">
+                    <h1 class="lg:text-5xl">Withdraw</h1>
+                    <h3 class="lg:text-8xl">$<span id="withdraw-total">00</span></h3>
                 </div >
-                <div class="bg-cyan-500 shadow-2xl rounded-lg py-8 text-center space-y-4 font-semibold  text-white">
-                    <h1 class="text-5xl">Balance</h1>
-                    <h3 class="text-8xl">$<span id="balance-total">1240</span></h3>
+                <div class="bg-cyan-500 shadow-2xl rounded-lg py-2 lg:py-8 text-center space-y-1 lg:space-y-4 font-semibold  text-white">
+                    <h1 class="lg:text-5xl">Balance</h1>
+                    <h3 class="lg:text-8xl">$<span id="balance-total">1240</span></h3>
                 </div >                
             </div>
         </section>
         <!-- deposit and withdraw section -->
         <section class="w-11/12 mx-auto my-24">
-            <div class="grid grid-cols-2  gap-8">
-                <div class="bg-fuchsia-500 shadow-2xl space-y-3 flex flex-col items-center rounded-lg py-8 text-center space-y-4 font-semibold  text-white">
-                    <h1 class="text-5xl">Please Deposit</h1>
-                    <input id="deposit-field" class="bg-white  shadow-2xl block w-7/12 text-center lg:m-3 mt-5 text-black text-xl lg:text-2xl lg:p-3 rounded-md" type="text" placeholder="$ Enter Ammount">                    
-                    <button id="btn-deposit" class="  bg-[#ff4600] hover:bg-lime-500 text-white lg:font-semibold p-2 lg:py-4 lg:px-10 mb-20 lg:text-2xl m-3 rounded-lg">Deposit</button>
+            <div class="grid grid-cols-2 gap-2 lg:gap-8">
+                <div class="bg-fuchsia-500 shadow-2xl space-y-3 flex flex-col items-center rounded-lg py-2 lg:py-8 text-center  font-semibold  text-white">
+                    <h1 class="lg:text-5xl">Please Deposit</h1>
+                    <input id="deposit-field" class="bg-white  p-1  w-9/12 lg:w-7/12 text-center lg:m-3  text-black  lg:text-2xl lg:p-3 rounded-md" type="text" placeholder="Enter Ammount">                    
+                    <button id="btn-deposit" class="  bg-[#ff4600] hover:bg-lime-500  text-white lg:font-semibold py-1 px-2  lg:py-4 lg:px-10 lg:mb-20 lg:text-2xl  rounded-lg">Deposit</button>
 
                 </div >
-                <div class="bg-indigo-500 shadow-2xl space-y-3 flex flex-col items-center rounded-lg py-8 text-center space-y-4 font-semibold  text-white">
-                    <h1 class="text-5xl">Please Withdraw</h1>
-                    <input id="withdraw-field" class="bg-white block  shadow-2xl w-7/12 text-center lg:m-3 mt-5 text-black text-xl lg:text-2xl lg:p-3 rounded-md" type="text" placeholder="$ Enter Ammount">                    
-                    <button id="btn-withdraw" class="  bg-[#ff4600] hover:bg-lime-500 text-white lg:font-semibold p-2 lg:py-4 lg:px-10 mb-20 lg:text-2xl m-3 rounded-lg">Withdraw</button>
+                <div class="bg-indigo-500 shadow-2xl space-y-3  flex flex-col items-center rounded-lg py-2 lg:py-8  text-center  font-semibold  text-white">
+                    <h1 class="lg:text-5xl">Please Withdraw</h1>
+                    <input id="withdraw-field" class="bg-white block p-1  w-9/12 text-center lg:m-3  text-black  lg:text-2xl lg:p-3 rounded-md" type="text" placeholder="Enter Ammount">                    
+                    <button id="btn-withdraw" class="  bg-[#ff4600] hover:bg-lime-500 text-white lg:font-semibold px-3 py-1  lg:py-4 lg:px-10 lg:mb-20 lg:text-2xl  rounded-lg">Withdraw</button>
                 </div >
                              
             </div>
