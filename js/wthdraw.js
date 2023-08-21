@@ -1,6 +1,11 @@
 document.getElementById('btn-withdraw').addEventListener('click',function(event){
     const withDrawField=document.getElementById('withdraw-field');
     const newWithDrawAmount=withDrawField.value;
+    withDrawField.value='';
+    if(isNaN(newWithDrawAmount)){
+        alert('Invalid Input');
+        return;
+    }
     
     const withDrawTotalElement=document.getElementById('withdraw-total');
     const previousWithdrawTotal=withDrawTotalElement.innerText;
@@ -8,7 +13,7 @@ document.getElementById('btn-withdraw').addEventListener('click',function(event)
     
     const balanceElement=document.getElementById('balance-total');
     const priviousBalance=balanceElement.innerText;
-    withDrawField.value='';
+    
 
     if(parseFloat(newWithDrawAmount) > parseFloat(priviousBalance)){
         alert('Insufficient Balance');

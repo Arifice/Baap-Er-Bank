@@ -1,10 +1,15 @@
 document.getElementById('btn-deposit').addEventListener('click',function(event){
     const depositField=document.getElementById('deposit-field');
-    const newDepositAmount=depositField.value;    
+    const newDepositAmount=depositField.value;
+    depositField.value='';
+    if(isNaN(newDepositAmount)){
+        alert('Invalid Input');
+        return;
+    }   
     const depositTotalElement=document.getElementById('deposit-total');
     const previousDepositTotal=depositTotalElement.innerText;    
     
-    depositField.value='';
+    
     const currentDeposit=parseFloat(previousDepositTotal)+parseFloat(newDepositAmount);
     depositTotalElement.innerText=currentDeposit;
 
